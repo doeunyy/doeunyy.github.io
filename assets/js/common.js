@@ -29,6 +29,34 @@ $(document).ready(function () {
     $("body").scrollspy({
       target: navSelector,
     });
+
+    if ($(".cv").length) {
+      var cvHeadings = $(".cv h3[id]");
+      var activateCvToc = function () {
+        var threshold = $(window).scrollTop() + $(".navbar").outerHeight() + 80;
+        var activeId = cvHeadings.first().attr("id");
+
+        cvHeadings.each(function () {
+          if ($(this).offset().top <= threshold) {
+            activeId = $(this).attr("id");
+          }
+        });
+
+        $(navSelector + " .nav-link").removeClass("active");
+        $(navSelector + ' .nav-link[href="#' + activeId + '"]').addClass("active");
+      };
+
+      activateCvToc();
+      $(window).on("scroll resize", activateCvToc);
+      $(navSelector).on("click", ".nav-link", function () {
+        var clickedLink = $(this);
+        window.setTimeout(function () {
+          $(navSelector + " .nav-link").removeClass("active");
+          clickedLink.addClass("active");
+          activateCvToc();
+        }, 0);
+      });
+    }
   }
 
   // add css to jupyter notebooks

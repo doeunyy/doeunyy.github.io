@@ -86,9 +86,16 @@ layout: default
             {% endunless %}
           {% endif %}
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            {% assign section_title = data[0] | replace: '_', ' ' | capitalize %}
+            {% if data[0] == 'research_experience' %}
+              {% assign section_title = 'Research Experience' %}
+            {% elsif data[0] == 'professional_experience' %}
+              {% assign section_title = 'Professional Experience' %}
+            {% elsif data[0] == 'volunteer' %}
+              {% assign section_title = 'Teaching & Mentoring' %}
+            {% endif %}
+            <h3 id="{{ data[0] }}" class="card-title font-weight-medium">{{ section_title }}</h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}
@@ -96,6 +103,10 @@ layout: default
                 {% when 'education' %}
                   {% include resume/education.liquid %}
                 {% when 'work' %}
+                  {% include resume/work.liquid %}
+                {% when 'research_experience' %}
+                  {% include resume/work.liquid %}
+                {% when 'professional_experience' %}
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
                   {% include resume/volunteer.liquid %}

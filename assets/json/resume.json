@@ -1,200 +1,261 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Doeun Kim",
+    "label": "M.S. Computer Science Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "doeunkim@usc.edu",
+    "github": "https://github.com/doeunyy",
+    "linkedin": "https://www.linkedin.com/in/doeun-kim",
+    "summary": "",
+    "interest": "Machine Learning, AI for Healthcare and Biomedicine, Explainable AI, Multimodal Learning, Generative Models",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "",
+      "postalCode": "",
+      "city": "Los Angeles",
       "countryCode": "US",
       "region": "California"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "doeun-kim",
+        "url": "https://www.linkedin.com/in/doeun-kim"
+      },
+      {
+        "network": "GitHub",
+        "username": "doeunyy",
+        "url": "https://github.com/doeunyy"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "University of Southern California",
+      "location": "Los Angeles, CA",
+      "url": "https://www.usc.edu/",
+      "area": "M.S. in Computer Science",
+      "studyType": "Master's",
+      "startDate": "2025-06",
+      "endDate": "Present",
+      "courses": [
+        "Expected December 2026",
+        "GPA: 3.82 / 4.0",
+        "Relevant coursework: Machine Learning, Deep Learning, Applied NLP, Information Retrieval & Web Search, Algorithms"
+      ]
+    },
+    {
+      "institution": "Ewha Womans University",
+      "location": "Seoul, South Korea",
+      "url": "https://www.ewha.ac.kr/ewhaen/index.do",
+      "area": "B.S. in Computer Science and Engineering & B.S. in Content Convergence",
+      "studyType": "Bachelor's",
+      "startDate": "2020-03",
+      "endDate": "2025-02",
+      "courses": [
+        "GPA: 4.21 / 4.3 (Top 4%, Summa Cum Laude; Dean's List, all semesters)",
+        "Undergraduate thesis: Layer-Adaptive Quantization of Diffusion Models using Fisher Information",
+        "Relevant coursework: Data Structures, Algorithms, Computer Architecture, Operating Systems, Database, Software Engineering"
+      ]
+    },
+    {
+      "institution": "San Jose State University",
+      "location": "San Jose, CA",
+      "url": "https://www.sjsu.edu/",
+      "area": "International Student Exchange Program, Computer Science",
+      "studyType": "Exchange",
+      "startDate": "2022-08",
+      "endDate": "2022-12",
+      "courses": [
+        "Relevant coursework: Introduction to AI, Formal Language and Computability"
+      ]
     }
   ],
-  "awards": [
+  "research_experience": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "University of Southern California",
+      "department": "Laboratory for Machine Learning, Health and Biomedicine",
+      "position": "Graduate Research Assistant",
+      "location": "Los Angeles, CA",
+      "url": "https://www.usc.edu/",
+      "startDate": "2025-11",
+      "endDate": "Present",
+      "summary": "Advisor: Prof. Ruishan Liu",
+      "highlights": [
+        "Developed AI-driven deimmunization methods for synthetic binders, identifying high-immunogenicity peptide regions and suggesting amino acid substitutions to reduce predicted immunogenicity while preserving binding affinity.",
+        "Built an interactive research pipeline for HLA-specific peptide scanning and population-aware immunogenicity analysis, using FastAPI, Gradio, RabbitMQ, peptide-level score caching, and beam search to support efficient and scalable evaluation."
+      ]
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "Ewha Womans University",
+      "department": "AI Computing Platform Lab",
+      "position": "Undergraduate Researcher",
+      "location": "Seoul, South Korea",
+      "url": "https://www.ewha.ac.kr/ewhaen/index.do",
+      "startDate": "2024-04",
+      "endDate": "2025-02",
+      "summary": "Advisor: Prof. Jaehyeong Sim",
+      "highlights": [
+        "Led research on Fisher-guided layer-adaptive quantization for diffusion models, reducing model size by 49.4% while improving FID by 7%; presented the work at the 2024 IEIE Symposium as a co-first author and presenter.",
+        "Conducted a DDPM interpretability study using Integrated Gradients, GradSHAP, and Occlusion to analyze the model's generation process across timesteps, showing a progression from global outlines to fine details; presented at the KCC 2024 XAI Workshop as the only undergraduate-led team."
+      ]
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Layer-Adaptive Quantization on Diffusion Models using Fisher Information",
+      "publisher": "2024 Symposium of the Institute of Electronics and Information Engineers, Seoul, South Korea",
+      "releaseDate": "2024-12-27",
+      "url": "",
+      "summary": "Kim, D., Byeon, J., Park, I., & Sim, J. Poster presentation. Co-first author and presenter."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Analysis of Diffusion Model Inference Mechanisms Using XAI Techniques",
+      "publisher": "KCC 2024 XAI Workshop, Jeju, South Korea",
+      "releaseDate": "2024-06-27",
+      "url": "",
+      "summary": "Kim, D., Byeon, J., & Park, I. Poster presentation. Co-first author and presenter."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Multimodal Entrance Detection System",
+      "summary": "Multimodal geospatial entrance detection using aerial imagery, street-view images, GPS trajectories, and building footprint overlays.",
+      "highlights": [
+        "Contributed to DoRA-based Qwen fine-tuning and API-based in-context learning experiments for multimodal entrance detection with geospatial inputs.",
+        "Developed GPS-aware reranking across 64 candidate entrance locations, improving F1 from 0.30 to 0.59 and AUPR from 0.17 to 0.45."
+      ],
+      "startDate": "2026-01",
+      "endDate": "Present",
+      "url": ""
+    },
+    {
+      "name": "PokerBench",
+      "summary": "Small language model training and evaluation for poker decision-making under uncertainty.",
+      "highlights": [
+        "Fine-tuned Qwen3, LLaMA-3.2, and Gemma variants using QLoRA and LoRA adapters on approximately 560K solver-labeled samples.",
+        "Built an evaluation pipeline for instruction-following under uncertainty, comparing model performance against larger proprietary baselines using Action Accuracy and Exact Match."
+      ],
+      "startDate": "2025-08",
+      "endDate": "2025-12",
+      "url": ""
+    },
+    {
+      "name": "TalesRunner",
+      "summary": "AI-powered storybook generation from user-provided images.",
+      "highlights": [
+        "Developed a generation pipeline combining BLIP-based image captioning, fine-tuned KoT5 story generation, and GPT-4o-assisted text refinement.",
+        "Integrated captions, story text, and user images into downloadable PDF storybooks, validating narrative quality, image-text alignment, and formatting consistency across 100+ test cases."
+      ],
+      "startDate": "2025-01",
+      "endDate": "2025-02",
+      "url": ""
+    },
+    {
+      "name": "Jeans",
+      "summary": "AI-assisted photo editing and sharing service designed for senior users.",
+      "highlights": [
+        "Led a 5-member team in developing AI features including fine-tuned Whisper for Korean dialect speech recognition and YOLO/FaceNet-based facial recognition.",
+        "Deployed FastAPI-based ML inference services on AWS EC2 with GitHub Actions CI/CD, refining speech-driven interaction flows through senior user interviews and usability tests."
+      ],
+      "startDate": "2024-12",
+      "endDate": "2025-02",
+      "url": ""
     }
-  ]
+  ],
+  "professional_experience": [
+    {
+      "name": "RainbirdGEO",
+      "position": "Software Engineer Intern (Full-stack)",
+      "location": "Seoul, South Korea",
+      "url": "https://rainbirdgeo.com/en/home-english/",
+      "startDate": "2021-05",
+      "endDate": "2022-07",
+      "summary": "",
+      "highlights": [
+        "Developed full-stack features for a weather-forecasting mobile app using React Native and Node.js/Express, supporting pilot deployment and usability testing in Southeast Asian regions.",
+        "Conducted product analysis using user feedback, competitor research, and 2,000+ survey responses, creating Tableau dashboards and contributing to improvements in satisfaction scores and forecast accuracy."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "USC Viterbi School of Engineering",
+      "location": "",
+      "position": "Viterbi Graduate Mentor / Women in Engineering Mentor",
+      "url": "",
+      "startDate": "2025-09",
+      "endDate": "Present",
+      "summary": "Mentoring incoming and women graduate students on academic planning, research involvement, and transition to graduate student life.",
+      "highlights": []
+    },
+    {
+      "organization": "Scholar English - Private English Academy",
+      "location": "",
+      "position": "Instructional Assistant (Part-time)",
+      "url": "",
+      "startDate": "2023-09",
+      "endDate": "2025-05",
+      "summary": "Supported instructional operations across grading, curriculum revision, and student communication, while developing a custom GPT-based chatbot to improve workflow efficiency.",
+      "highlights": []
+    },
+    {
+      "organization": "Neulhaerang School - Inter-University Volunteering Org. (Ewha Womans Univ. & SNU)",
+      "location": "",
+      "position": "Volunteer Tutor",
+      "url": "",
+      "startDate": "2021-03",
+      "endDate": "2021-12",
+      "summary": "Taught weekly computer literacy classes for elementary students and created accessible learning materials for beginner learners.",
+      "highlights": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Individual Best Award",
+      "date": "2025",
+      "awarder": "SK Telecom FLY AI Program",
+      "url": "",
+      "summary": "Awarded by SK Telecom FLY AI Program, run by South Korea's largest telecom company."
+    },
+    {
+      "title": "Outstanding Project Award",
+      "date": "2025",
+      "awarder": "SK Telecom FLY AI Program",
+      "url": "",
+      "summary": "Project award from SK Telecom FLY AI Program."
+    },
+    {
+      "title": "National Scholarship for Science and Engineering",
+      "date": "2022-2024",
+      "awarder": "Korea Student Aid Foundation",
+      "url": "",
+      "summary": "Full tuition merit-based scholarship for two years."
+    },
+    {
+      "title": "Capstone Project Merit Award",
+      "date": "2024",
+      "awarder": "Ewha Womans University",
+      "url": "",
+      "summary": "Awarded at Ewha Capstone Design Poster Session."
+    },
+    {
+      "title": "Honors Scholarship",
+      "date": "2020-2024",
+      "awarder": "Ewha Womans University",
+      "url": "",
+      "summary": "Awarded four times."
+    },
+    {
+      "title": "International Study Scholarship",
+      "date": "2022",
+      "awarder": "Ewha Womans University",
+      "url": "",
+      "summary": "Scholarship supporting international study."
+    }
+  ],
+  "certificates": [],
+  "references": [],
+  "skills": [],
+  "languages": [],
+  "interests": []
 }

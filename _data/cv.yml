@@ -2,96 +2,211 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Doeun Kim
+    - name: Location
+      value: Los Angeles, CA
+    - name: Email
+      value: doeunkim@usc.edu
+    - name: Website
+      value: <a href="https://doeunyy.github.io">doeunyy.github.io</a>
+    - name: LinkedIn
+      value: <a href="https://www.linkedin.com/in/doeun-kim/">linkedin.com/in/doeun-kim</a>
+    - name: GitHub
+      value: <a href="https://github.com/doeunyy">github.com/doeunyy</a>
+
+- title: Research Interests
+  type: list
+  contents:
+    - Machine Learning, AI for Healthcare and Biomedicine, Explainable AI, Multimodal Learning, Generative Models
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Computer Science
+      institution: University of Southern California
+      year: Jun 2025 - Dec 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Expected December 2026"
+        - "GPA: 3.82 / 4.0"
+        - "Relevant coursework: Machine Learning, Deep Learning, Applied NLP, Information Retrieval & Web Search, Algorithms"
+    - title: B.S. in Computer Science and Engineering & B.S. in Content Convergence
+      institution: Ewha Womans University
+      year: Mar 2020 - Feb 2025
       description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 4.21 / 4.3 (Top 4%, Summa Cum Laude; Dean's List, all semesters)"
+        - "Undergraduate thesis: Layer-Adaptive Quantization of Diffusion Models using Fisher Information"
+        - "Relevant coursework: Data Structures, Algorithms, Computer Architecture, Operating Systems, Database, Software Engineering"
+    - title: International Student Exchange Program, Computer Science
+      institution: San Jose State University
+      year: Aug 2022 - Dec 2022
+      description:
+        - "Relevant coursework: Introduction to AI, Formal Language and Computability"
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Research Assistant
+      institution: Laboratory for Machine Learning, Health and Biomedicine, University of Southern California
+      year: Nov 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Advisor: Prof. Ruishan Liu"
+        - Developed a deimmunization algorithm for synthetic binders, identifying amino acid substitutions in high-immunogenicity peptide regions aimed at reducing predicted immunogenicity while preserving binding affinity.
+        - Optimized deimmunization search with peptide-level score caching and beam search, reducing redundant immunogenicity evaluations while retaining multiple promising candidate substitutions for sequence-level optimization.
+        - Built a FastAPI- and Gradio-based research interface for HLA-specific peptide scanning and implemented RabbitMQ-based asynchronous job orchestration for concurrent peptide scans.
+    - title: Undergraduate Researcher
+      institution: AI Computing Platform Lab, Ewha Womans University
+      year: Apr 2024 - Feb 2025
       description:
-        - Description 1.
-        - Description 2.
+        - "Advisor: Prof. Jaehyeong Sim"
+        - Led an undergraduate research team on Layer-Adaptive Quantization of Diffusion Models using Fisher Information to guide layer-wise quantization.
+        - Reduced model size by 49.4% and improved FID by 7%; presented the work at the 2024 IEIE Symposium as a co-first author and presenter.
+        - Led a DDPM interpretability study using Integrated Gradients, GradSHAP, and Occlusion on ImageNet-1000 and presented the work at the KCC 2024 XAI Workshop.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Professional Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Software Engineer Intern, Full-stack
+      institution: RainbirdGEO
+      year: May 2021 - Jul 2022
+      description:
+        - Built full-stack features for a weather-forecasting mobile application using React Native and Node.js/Express.
+        - Translated requirements analysis, competitor research, and user feedback into functional specifications and iterative product updates.
+        - Analyzed 2,000+ survey responses from 100+ users with Tableau dashboards, contributing to improvements in user satisfaction from 2.9 to 4.1 and forecast accuracy from 63% to 96%.
 
-- title: Honors and Awards
+- title: Publications & Presentations
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Layer-Adaptive Quantization on Diffusion Models using Fisher Information
+      institution: 2024 Symposium of the Institute of Electronics and Information Engineers, Seoul, South Korea
+      year: Dec 2024
+      description:
+        - "Kim, D., Byeon, J., Park, I., & Sim, J. Co-first author and presenter."
+    - title: Analysis of Diffusion Model Inference Mechanisms Using XAI Techniques
+      institution: KCC 2024 XAI Workshop, Jeju, South Korea
+      year: Jun 2024
+      description:
+        - "Kim, D., Byeon, J., & Park, I. Co-first author and presenter."
 
-- title: Academic Interests
-  type: nested_list
+- title: Academic Projects
+  type: time_table
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: Multimodal Entrance Detection System
+      year: Jan 2026 - Present
+      description:
+        - Contributed to DoRA-based Qwen fine-tuning for multimodal entrance detection using aerial imagery, street-view images, GPS trajectories, and building footprint overlays.
+        - Developed GPS-aware reranking across 64 candidate entrance locations, improving F1 from 0.30 to 0.59 and AUPR from 0.17 to 0.45.
+    - title: "PokerBench: SLMs for Poker Decision-Making"
+      year: Aug 2025 - Dec 2025
+      description:
+        - Fine-tuned Qwen3, LLaMA-3.2, and Gemma variants using QLoRA and LoRA adapters on approximately 560K solver-labeled samples.
+        - Built an evaluation pipeline for instruction-following under uncertainty and compared model performance against larger proprietary baselines.
+    - title: "TalesRunner: AI-powered Storybook Generation from Images"
+      year: Jan 2025 - Feb 2025
+      description:
+        - Developed a multimodal generation pipeline combining BLIP-based image captioning, fine-tuned KoT5 story generation, and GPT-4o-assisted text refinement.
+        - Integrated generated captions, story text, and user images into downloadable PDF storybooks, validating narrative quality, image-text alignment, and formatting consistency across 100+ test cases.
+    - title: "Jeans: AI-Based Photo Editing and Sharing Service for Seniors"
+      year: Dec 2024 - Feb 2025
+      description:
+        - Led a 5-member team in developing AI features including fine-tuned Whisper for Korean dialect speech recognition and YOLO/FaceNet-based facial recognition.
+        - Deployed FastAPI-based ML inference services on AWS EC2 with GitHub Actions CI/CD.
 
-- title: Other Interests
-  type: list
+- title: Teaching & Mentoring
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Women in Engineering Mentor
+      institution: USC Viterbi School of Engineering
+      year: Jan 2026 - Present
+      description:
+        - Support women graduate students through peer mentoring, academic guidance, and discussions on navigating engineering graduate programs.
+    - title: Viterbi Graduate Mentor
+      institution: USC Viterbi School of Engineering
+      year: Sep 2025 - Present
+      description:
+        - Mentor incoming graduate students on course planning, research involvement, and adjustment to graduate student life at USC.
+    - title: Instructional Assistant, Part-time
+      institution: Scholar English - Private English Academy
+      year: Sep 2023 - May 2025
+      description:
+        - Supported English instruction through grading, assignment review, instructional material preparation, curriculum revision, and student communication.
+        - Developed and maintained a custom GPT-based chatbot to streamline instructional workflows and support student-facing communication.
+    - title: Volunteer Tutor
+      institution: Neulhaerang School - Inter-University Volunteering Organization
+      year: Mar 2021 - Dec 2021
+      description:
+        - Designed accessible learning materials and taught weekly computer literacy classes for elementary students.
+
+- title: Honors & Awards
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - Individual Best Award, SK Telecom FLY AI Program
+        - Outstanding Project Award, SK Telecom FLY AI Program
+    - year: 2024
+      items:
+        - Capstone Project Merit Award, Ewha Womans University
+    - year: 2022 - 2024
+      items:
+        - National Scholarship for Science and Engineering, Korea Student Aid Foundation
+        - Honors Scholarship, Ewha Womans University
+    - year: 2022
+      items:
+        - International Study Scholarship, Ewha Womans University
+
+- title: Technical Skills
+  type: list_groups
+  contents:
+    - category: AI/ML
+      items:
+        - name: PyTorch
+        - name: TensorFlow
+        - name: Scikit-learn
+        - name: Keras
+        - name: OpenCV
+        - name: Hugging Face Transformers
+        - name: LoRA/QLoRA
+        - name: BLIP
+        - name: Whisper
+    - category: Research & Data
+      items:
+        - name: NumPy
+        - name: Pandas
+        - name: Tableau
+        - name: Model evaluation
+        - name: Prompt formulation
+        - name: Dataset preprocessing
+        - name: Experimental analysis
+    - category: Languages
+      items:
+        - name: Python
+        - name: Java
+        - name: C
+        - name: C#
+        - name: SQL
+        - name: JavaScript/TypeScript
+        - name: HTML/CSS
+    - category: Backend & ML Systems
+      items:
+        - name: FastAPI
+        - name: Django
+        - name: Express
+        - name: Spring
+        - name: React
+        - name: React Native
+        - name: Gradio
+        - name: REST APIs
+    - category: Cloud & DevOps
+      items:
+        - name: AWS
+        - name: MS Azure
+        - name: Docker
+        - name: Git
+        - name: GitHub Actions
+        - name: CI/CD
+    - category: Databases
+      items:
+        - name: MySQL
+        - name: MongoDB
+        - name: MariaDB
+        - name: SQLite

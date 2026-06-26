@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: M.S candidate in Computer Science @ <a href='https://www.usc.edu/'>University of Southern California</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_doeunkim.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <!-- <p>555 your office number</p> -->
@@ -33,12 +33,10 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-I'm currently pursuing my M.S. in Computer Science at the [University of Southern California (USC)](https://www.usc.edu/), specializing in Artificial Intelligence, Computer Vision, and Generative Models—particularly diffusion-based approaches. I’m also passionate about Model Optimization and Explainable AI (XAI).
+Hi! I'm a Master's student in Computer Science at the [University of Southern California (USC)](https://www.usc.edu/), with a strong interest in applying AI to healthcare and biomedicine.
 
-I earned my B.S.E. in Computer Science and Engineering from [Ewha Womans University](https://www.ewha.ac.kr/ewhaen/index.do) in February 2025, along with a second major in Content Convergence—an interdisciplinary program that bridges humanities, engineering, and design to explore storytelling, content creation, and software development.
+Currently, I'm working as a graduate researcher under [Professor Ruishan](https://viterbi-web.usc.edu/~ruishanl/), where I'm involved in drug discovery and deimmunization research projects. My work focuses on applying machine learning to real-world challenges such as immunogenicity analysis. Beyond that, I'm also deeply interested in generative models (diffusion) and explainable AI (XAI), and I enjoy exploring how these areas can contribute to more robust and transparent systems.
 
-During my undergraduate years, I gained hands-on experience as a software engineering intern at RainbirdGEO and as a research assistant at the [AI Computing Platform Laboratory (ACPL)](https://acpl.ewha.ac.kr/) at Ewha Womans University. These opportunities shaped my technical foundation and nurtured a research-driven mindset.
+Before starting my graduate studies, I earned my undergraduate degree from [Ewha Womans University](https://www.ewha.ac.kr/ewhaen/index.do), where I double majored in Computer Science & Engineering and Content Convergence. During that time, I worked as an undergraduate researcher at the AI Computing Platform Lab under Professor Jaehyeong Sim, conducting AI/ML research. I also gained industry experience as a Software Engineer Intern at RainbirdGEO, where I contributed to building a weather application targeting Southeast Asia.
 
-My ultimate goal is to harness the power of AI and data science to create human-centered solutions that meaningfully improve lives. By combining technical expertise with creative thinking, I strive to build tools and services that make a lasting impact.
-
-Feel free to explore my projects and reach out—I’d love to connect!
+While I'm excited about advancing AI itself, I care even more about how it can be used to make a real impact. This is what led me to focus on healthcare applications, and it continues to motivate me to build AI systems that are reliable, interpretable, and ultimately human-centered.

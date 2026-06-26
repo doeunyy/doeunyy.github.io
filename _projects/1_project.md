@@ -1,81 +1,67 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Jeans
+description: AI-assisted photo editing and sharing service designed for senior users.
+img: assets/projects/jeans/Jeans_01_Main.jpg
+period: 2024.12 - 2025.02
 importance: 1
-category: work
-related_publications: true
+category: Web & App Projects
+github: https://github.com/doeunyy/jeans-ai
+article: https://www.trendw.kr/news/articleView.html?idxno=11009
+demo: https://drive.google.com/file/d/1kM74afCvDtxa96X0vyozHJLchectFz6t/view?usp=sharing
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+{% include figure.liquid loading="eager" path="assets/projects/jeans/Jeans_01_Main.jpg" title="Jeans main screen" caption="Figure 1. Jeans main screen. Primary service interface for AI-assisted photo editing and sharing." class="img-fluid rounded z-depth-1" %}
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Jeans is an AI-powered photo editing and sharing service designed to make digital photo workflows more accessible for senior users. The project combines voice-based interaction, face-aware image processing, and a mobile-friendly service flow to help older adults edit and share photos with less friction.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Role
+
+PM and AI Lead. Led the AI pipeline as the sole AI engineer, covering dataset preparation, model fine-tuning, API design, deployment, and senior-centered usability validation.
+
+## Key Features
+
+- Voice-driven photo editing using Whisper fine-tuned for Korean dialect and senior speech patterns.
+- Face detection and enhancement with YOLO and FaceNet.
+- Automated captioning and tagging to improve accessibility.
+- FastAPI-based inference APIs deployed on AWS EC2.
+- CI/CD automation with GitHub Actions.
+
+{% include figure.liquid loading="eager" path="assets/projects/jeans/Jeans_02_Key Features.jpg" title="Jeans key features" caption="Figure 2. Key features. Overview of voice-driven editing, face-aware enhancement, and photo sharing support." class="img-fluid rounded z-depth-1" %}
+
+## AI Flow
+
+The service flow connects voice commands, image understanding, and editing actions so that users can complete photo tasks through a simpler interaction model.
+
+{% include figure.liquid loading="eager" path="assets/projects/jeans/Jeans_03_Service AI Flow.jpg" title="Jeans service AI flow" caption="Figure 3. Service AI flow. End-to-end flow connecting voice commands, image analysis, and editing actions." class="img-fluid rounded z-depth-1" %}
+
+## Model Development
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/projects/jeans/Jeans_04_Whisper.jpg" title="Jeans Whisper model" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/projects/jeans/Jeans_05_Dataset.jpg" title="Jeans dataset" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
+<div class="caption">
+  Figure 4. Model development. Whisper fine-tuning and dataset preparation for Korean senior speech commands.
+</div>
+
+## Service Architecture
+
+{% include figure.liquid loading="eager" path="assets/projects/jeans/Jeans_06_Service Architecture.jpg" title="Jeans service architecture" caption="Figure 5. Service architecture. FastAPI-based AI inference services integrated with the mobile photo-editing workflow." class="img-fluid rounded z-depth-1" %}
+
+## Technical Scope
+
+- Built speech-command data pipelines with preprocessing for normalization, trimming, and silence removal.
+- Mapped recognized voice commands to image editing operations such as cropping, brightening, and sharpening.
+- Designed REST endpoints for image upload, transformation, and retrieval.
+- Refined the interaction flow through interviews and usability tests with senior users.
+
+## Awards
+
+- Personal Excellence Award, SK Telecom FLY AI Challenger Program.
+- Project Excellence Award, SK Telecom FLY AI Challenger Program.

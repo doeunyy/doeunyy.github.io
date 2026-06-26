@@ -1,81 +1,57 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: Multimodal Entrance Detection
+description: Geospatial entrance detection using aerial imagery, street-view images, GPS trajectories, and building footprint overlays.
+period: 2026.01 - 2026.05
+importance: 0
+category: AI & ML Projects
+github: https://github.com/doeunyy/multimodal-entrance-detection
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Multimodal Entrance Detection is a geospatial AI project for identifying likely building entrance locations from heterogeneous spatial and visual signals. The project frames entrance localization as a candidate-ranking problem, combining building geometry, aerial imagery, street-view images, and GPS traces to infer where people are likely to enter a building.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Method
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The system uses a multimodal VLM-based inference pipeline. For each building, candidate entrance locations are sampled along the building boundary and combined with multimodal inputs such as building footprints, aerial overlays, street-view images, and nearby GPS traces. The VLM predicts candidate-level entrance probabilities, which are then refined through score calibration using rank-based and GPS-density priors.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+{% include figure.liquid loading="eager" path="assets/projects/multi_ent/multi_ent_kimi_pipeline.jpg" title="Multimodal VLM inference pipeline" caption="Figure 1. Multimodal VLM inference pipeline. The system combines aerial imagery, street-view images, building footprints, candidate locations, and GPS traces into a VLM-based candidate-ranking pipeline, followed by score calibration using rank and GPS priors." class="img-fluid rounded z-depth-1" %}
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Results
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+GPS- and rank-aware calibration improved candidate selection quality by combining VLM confidence with spatial priors from pedestrian trajectories.
 
-{% raw %}
+### Effect of Score Calibration
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+| Calibration Params (α / β / γ) | Accuracy | Precision | Recall | F1 | AUROC | AUPR |
+| ------------------------------ | -------: | --------: | -----: | -: | ----: | ---: |
+| None | 0.972 | 0.381 | 0.364 | 0.372 | 0.751 | 0.175 |
+| 0.30 / 0.10 / 0.10 | 0.977 | 0.500 | 0.364 | 0.421 | 0.764 | 0.258 |
+| 0.10 / 0.05 / 0.02 | 0.965 | 0.313 | 0.455 | 0.370 | 0.795 | 0.214 |
+| 0.30 / 0.05 / 0.01 | 0.976 | 0.474 | 0.409 | 0.439 | 0.835 | 0.268 |
+| **0.30 / 0.02 / 0.01** | **0.984** | **0.733** | **0.500** | **0.595** | **0.912** | **0.450** |
+| 0.30 / 0.01 / 0.01 | 0.974 | 0.400 | 0.273 | 0.324 | 0.713 | 0.152 |
 
-{% endraw %}
+**Takeaway.** Score calibration improved F1 from **0.372 to 0.595** and AUPR from **0.175 to 0.450**, showing that GPS- and rank-aware spatial priors helped refine candidate entrance ranking.
+
+### Effect of Overlay-Based Spatial Representation
+
+| Spatial Overlay | Accuracy | Precision | Recall | F1 | AUROC | AUPR |
+| --------------- | -------: | --------: | -----: | -: | ----: | ---: |
+| Without overlay | 0.956 | 0.237 | 0.409 | 0.300 | 0.782 | 0.168 |
+| **With overlay** | **0.972** | **0.381** | 0.364 | **0.372** | 0.751 | **0.175** |
+
+**Takeaway.** Overlaying building geometry, candidate points, and GPS traces onto aerial imagery improved spatial grounding, increasing F1 from **0.300 to 0.372** and Precision from **0.237 to 0.381**.
+
+## Key Features
+
+- Multimodal entrance detection using aerial imagery, street-view images, GPS traces, and building footprints.
+- Candidate-level entrance prediction across 64 possible access points per building.
+- Vision-language model reasoning with geospatial overlay inputs.
+- GPS-aware score calibration and reranking for improved candidate selection.
+- Evaluation using F1, AUROC, and AUPR for entrance localization quality.
+
+## Tech Stack
+
+`Python` · `Vision-Language Models` · `Qwen` · `DoRA` · `Geospatial Data` · `GPS Trajectories` · `Evaluation Metrics`

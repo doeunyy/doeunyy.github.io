@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "al-folio CV data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "contents": {
+        "type": "array"
+      }
+    },
+    "required": [
+      "title",
+      "type",
+      "contents"
+    ],
+    "additionalProperties": true
+  }
+}

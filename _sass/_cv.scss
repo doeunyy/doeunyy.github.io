@@ -161,6 +161,10 @@ a.anchor {
   visibility: hidden;
 }
 
+.cv h3[id] {
+  scroll-margin-top: 70px;
+}
+
 ul.timeline {
   margin-top: 2rem;
   margin-bottom: 2rem;
