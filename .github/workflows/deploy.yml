@@ -80,6 +80,7 @@ jobs:
         run: |
           gem install bundler -v 2.6.9
           bundle config set path vendor/bundle
+          bundle lock --add-platform x86_64-linux-gnu
           bundle install --jobs 4 --retry 3 --verbose
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
