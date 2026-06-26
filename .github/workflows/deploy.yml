@@ -75,7 +75,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1.0"
-          bundler-cache: true
+          bundler-cache: false
+      - name: Install Ruby dependencies 💎
+        run: |
+          gem install bundler -v 2.6.9
+          bundle config set path vendor/bundle
+          bundle install --jobs 4 --retry 3 --verbose
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
