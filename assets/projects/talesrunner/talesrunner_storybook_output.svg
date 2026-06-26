@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">TalesRunner storybook output</title>
+  <desc id="desc">A compact pipeline from input images to generated story text and final PDF storybook pages.</desc>
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .panel { fill: #f7fafb; stroke: #d6e4e9; stroke-width: 2; rx: 14; }
+      .photo { fill: #dff1f6; stroke: #429bb8; stroke-width: 2; rx: 8; }
+      .page { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 8; }
+      .accent { fill: #429bb8; }
+      .text { fill: #1f2937; font: 600 24px "IBM Plex Sans", Arial, sans-serif; }
+      .sub { fill: #4b5563; font: 400 17px "IBM Plex Sans", Arial, sans-serif; }
+      .line { stroke: #9ca3af; stroke-width: 3; stroke-linecap: round; }
+      .arrow { stroke: #429bb8; stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" class="accent" />
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="360" />
+  <g transform="translate(60 70)">
+    <rect class="panel" width="250" height="190" />
+    <text class="text" x="125" y="42" text-anchor="middle">Input Images</text>
+    <rect class="photo" x="42" y="75" width="66" height="66" />
+    <rect class="photo" x="92" y="105" width="66" height="66" />
+    <rect class="photo" x="142" y="75" width="66" height="66" />
+  </g>
+  <path class="arrow" d="M330 165 H445" />
+  <g transform="translate(465 70)">
+    <rect class="panel" width="270" height="190" />
+    <text class="text" x="135" y="42" text-anchor="middle">Generated</text>
+    <text class="text" x="135" y="72" text-anchor="middle">Story Text</text>
+    <line class="line" x1="58" y1="112" x2="212" y2="112" />
+    <line class="line" x1="58" y1="142" x2="198" y2="142" />
+    <line class="line" x1="58" y1="172" x2="220" y2="172" />
+  </g>
+  <path class="arrow" d="M755 165 H870" />
+  <g transform="translate(890 48)">
+    <rect class="panel" width="250" height="234" />
+    <text class="text" x="125" y="43" text-anchor="middle">PDF Storybook</text>
+    <rect class="page" x="44" y="76" width="72" height="110" />
+    <rect class="page" x="90" y="92" width="72" height="110" />
+    <rect class="page" x="136" y="108" width="72" height="110" />
+    <line class="line" x1="156" y1="145" x2="188" y2="145" />
+    <line class="line" x1="156" y1="162" x2="190" y2="162" />
+    <line class="line" x1="156" y1="179" x2="182" y2="179" />
+  </g>
+</svg>
