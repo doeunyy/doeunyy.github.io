@@ -39,8 +39,8 @@
       "endDate": "Present",
       "courses": [
         "Expected December 2026",
-        "GPA: 3.82 / 4.0",
-        "Relevant coursework: Machine Learning, Deep Learning, Applied NLP, Information Retrieval & Web Search, Algorithms"
+        "GPA: 3.88 / 4.0",
+        "Relevant coursework: Machine Learning, Deep Learning, Applied NLP, Information Retrieval & Web Search, Algorithms, AgentAI, Game Development"
       ]
     },
     {
@@ -102,6 +102,13 @@
   ],
   "publications": [
     {
+      "name": "Contrastive Dual Encoders Enable Ultrafast Proteome-Wide Antigen Presentation Prediction across Population-Scale HLA Diversity",
+      "publisher": "Under review",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "Zeng, B.*, Yang, N.*, Wang, S.*, Choi, J. W., Kim, D., Liu, B., Baker, D., Yu, B.†, & Liu, R.† (*Equal contribution; †Co-corresponding authors)"
+    },
+    {
       "name": "Layer-Adaptive Quantization on Diffusion Models using Fisher Information",
       "publisher": "2024 Symposium of the Institute of Electronics and Information Engineers, Seoul, South Korea",
       "releaseDate": "2024-12-27",
@@ -118,14 +125,38 @@
   ],
   "projects": [
     {
+      "name": "EPIC Research Platform",
+      "summary": "Full-stack biomedical AI research platform supporting HLA-aware peptide scanning and computationally intensive machine learning inference.",
+      "highlights": [
+        "Independently developed the frontend and backend of a biomedical AI research platform using Gradio and FastAPI, integrating HLA sequence processing, peptide scanning, presentation scoring, and sequence similarity-based retrieval into a unified interface.",
+        "Implemented RabbitMQ-based asynchronous job orchestration so that long-running inference runs on background workers without blocking concurrent API requests.",
+        "Reduced redundant computation through singleton-managed model services, precomputed embeddings, score caching, and persistent result storage."
+      ],
+      "startDate": "2025-11",
+      "endDate": "2026-10",
+      "url": ""
+    },
+    {
+      "name": "Veridex",
+      "summary": "Evidence-grounded multi-agent research assistant for querying academic papers.",
+      "highlights": [
+        "Independently developed a supervisor-based multi-agent system using LangGraph with three specialized workers, three custom FastMCP servers, and a retrieval pipeline over 42 papers and 1,855 indexed chunks.",
+        "Designed hybrid OpenAI/Gemini routing with task-specific reasoning budgets, reducing median time to first token from 19.1s to 9.7s and cost per query from \\$0.0313 to \\$0.0201 with no observed RAGAS degradation.",
+        "Deployed the containerized application to Google Cloud Run with automated CI, reaching RAGAS faithfulness of 0.90 and context precision of 0.96 on a 35-question evaluation set."
+      ],
+      "startDate": "2026-09",
+      "endDate": "2026-10",
+      "url": ""
+    },
+    {
       "name": "Multimodal Entrance Detection System",
       "summary": "Multimodal geospatial entrance detection using aerial imagery, street-view images, GPS trajectories, and building footprint overlays.",
       "highlights": [
-        "Contributed to DoRA-based Qwen fine-tuning and API-based in-context learning experiments for multimodal entrance detection with geospatial inputs.",
-        "Developed GPS-aware reranking across 64 candidate entrance locations, improving F1 from 0.30 to 0.59 and AUPR from 0.17 to 0.45."
+        "Led the Kimi-k2.5-based in-context learning framework, designing overlay-grounded prompting that projects building footprints, 64 candidate entrance markers, and pedestrian GPS trajectories onto a shared aerial representation.",
+        "Developed post-hoc confidence calibration using rank-based floors and GPS-density priors, improving F1 from 0.372 to 0.595 and AUPR from 0.175 to 0.450 without task-specific fine-tuning."
       ],
       "startDate": "2026-01",
-      "endDate": "Present",
+      "endDate": "2026-05",
       "url": ""
     },
     {
@@ -163,6 +194,16 @@
     }
   ],
   "professional_experience": [
+    {
+      "name": "Lyntari, inc.",
+      "position": "Machine Learning / AI Engineering Intern",
+      "location": "Santa Monica, CA (Remote)",
+      "url": "https://www.lyntari.com/",
+      "startDate": "2026-10",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": []
+    },
     {
       "name": "RainbirdGEO",
       "position": "Software Engineer Intern (Full-stack)",
@@ -255,7 +296,82 @@
   ],
   "certificates": [],
   "references": [],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "JavaScript / TypeScript",
+        "SQL"
+      ]
+    },
+    {
+      "name": "AI / ML",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "PyTorch",
+        "Hugging Face Transformers",
+        "scikit-learn",
+        "LoRA / QLoRA",
+        "LLM & SLM fine-tuning",
+        "Vision-Language Models",
+        "Model evaluation"
+      ]
+    },
+    {
+      "name": "LLM Systems & Agents",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "LangGraph",
+        "LangChain",
+        "MCP / FastMCP",
+        "Retrieval-Augmented Generation",
+        "Tool calling",
+        "Prompt engineering",
+        "RAGAS"
+      ]
+    },
+    {
+      "name": "Backend & Web",
+      "icon": "fa-solid fa-server",
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "Node.js / Express",
+        "React Native",
+        "Gradio",
+        "RabbitMQ",
+        "REST APIs",
+        "Server-Sent Events"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "icon": "fa-solid fa-cloud",
+      "keywords": [
+        "AWS (EC2, Lightsail, Elastic Beanstalk)",
+        "Google Cloud Run",
+        "Docker / Docker Compose",
+        "NGINX",
+        "GitHub Actions CI/CD",
+        "pytest"
+      ]
+    },
+    {
+      "name": "Data & Storage",
+      "icon": "fa-solid fa-database",
+      "keywords": [
+        "MongoDB",
+        "MySQL",
+        "SQLite",
+        "Firestore",
+        "Chroma",
+        "NumPy / Pandas",
+        "Tableau"
+      ]
+    }
+  ],
   "languages": [],
   "interests": []
 }
