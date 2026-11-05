@@ -5,7 +5,7 @@ description: Backend service for team sports matching, player recruitment, and v
 img: assets/projects/teammate/teammate_main.png
 period: 2024.01 - 2024.02
 importance: 2
-category: Web & App Projects
+category: Platform & Web Engineering
 github: https://github.com/doeunyy/teammate-server
 ---
 

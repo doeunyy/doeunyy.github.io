@@ -5,7 +5,7 @@ permalink: /projects/
 description:
 nav: true
 nav_order: 3
-display_categories: ["AI & ML Projects", "Web & App Projects"]
+display_categories: ["AI & ML Projects", "Platform & Web Engineering"]
 horizontal: false
 ---
 

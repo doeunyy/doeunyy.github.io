@@ -3,7 +3,7 @@ layout: page
 title: Multimodal Entrance Detection
 description: Geospatial entrance detection using aerial imagery, street-view images, GPS trajectories, and building footprint overlays.
 period: 2026.01 - 2026.05
-importance: 0
+importance: 2
 category: AI & ML Projects
 github: https://github.com/doeunyy/multimodal-entrance-detection
 ---
@@ -11,6 +11,10 @@ github: https://github.com/doeunyy/multimodal-entrance-detection
 ## Overview
 
 Multimodal Entrance Detection is a geospatial AI project for identifying likely building entrance locations from heterogeneous spatial and visual signals. The project frames entrance localization as a candidate-ranking problem, combining building geometry, aerial imagery, street-view images, and GPS traces to infer where people are likely to enter a building.
+
+## Role
+
+Led the Kimi-k2.5-based in-context learning framework. Designed the overlay-grounded prompting that projects building footprints, candidate entrance markers, and GPS trajectories onto a shared aerial representation, reformulated the task from direct coordinate regression into discrete candidate ranking, and developed the post-hoc confidence calibration using rank-based floors and GPS-density priors. The PEFT baselines were developed separately by other team members.
 
 ## Method
 
@@ -54,4 +58,4 @@ GPS- and rank-aware calibration improved candidate selection quality by combinin
 
 ## Tech Stack
 
-`Python` · `Vision-Language Models` · `Qwen` · `DoRA` · `Geospatial Data` · `GPS Trajectories` · `Evaluation Metrics`
+`Python` · `Vision-Language Models` · `Kimi-k2.5` · `In-Context Learning` · `Prompt Engineering` · `Geospatial Data` · `GPS Trajectories` · `Evaluation Metrics`

@@ -4,8 +4,8 @@ title: Jeans
 description: AI-assisted photo editing and sharing service designed for senior users.
 img: assets/projects/jeans/Jeans_01_Main.jpg
 period: 2024.12 - 2025.02
-importance: 1
-category: Web & App Projects
+importance: 5
+category: AI & ML Projects
 github: https://github.com/doeunyy/jeans-ai
 article: https://www.trendw.kr/news/articleView.html?idxno=11009
 demo: https://drive.google.com/file/d/1kM74afCvDtxa96X0vyozHJLchectFz6t/view?usp=sharing

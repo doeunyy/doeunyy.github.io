@@ -3,7 +3,7 @@ layout: page
 title: PokerBench
 description: Small language model training and evaluation for poker decision-making under uncertainty.
 period: 2025.08 - 2025.12
-importance: 1
+importance: 3
 category: AI & ML Projects
 github: https://github.com/doeunyy/pokerbench-slm-decision-making
 ---

@@ -3,7 +3,7 @@ layout: page
 title: TalesRunner
 description: AI-powered storybook generation from user-provided images.
 period: 2025.01 - 2025.02
-importance: 2
+importance: 4
 category: AI & ML Projects
 github: https://github.com/doeunyy/tales-runner
 demo: https://drive.google.com/file/d/1mGgwiif4PGwiCj5L915gSZQOjdc6Qyaq/view?usp=sharing
