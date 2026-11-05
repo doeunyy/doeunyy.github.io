@@ -421,6 +421,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-epic-research-platform",
+          title: 'EPIC Research Platform',
+          description: "Full-stack biomedical AI research platform supporting HLA-aware peptide scanning and computationally intensive machine learning inference.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/epic/";
             },},{id: "projects-pokerbench",
           title: 'PokerBench',
           description: "Small language model training and evaluation for poker decision-making under uncertainty.",
@@ -436,6 +441,11 @@ ninja.data = [{
           description: "Backend service for team sports matching, player recruitment, and venue coordination.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/teammate/";
+            },},{id: "projects-veridex",
+          title: 'Veridex',
+          description: "Evidence-grounded multi-agent research assistant for querying academic papers.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/veridex/";
             },},{
         id: 'social-email',
         title: 'email',
