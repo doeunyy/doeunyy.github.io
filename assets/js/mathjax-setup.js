@@ -5,6 +5,9 @@ window.MathJax = {
       ["$", "$"],
       ["\\(", "\\)"],
     ],
+    // Let "\$" render as a literal dollar sign so currency amounts (e.g. \$0.02)
+    // are not picked up as inline math delimiters.
+    processEscapes: true,
   },
   options: {
     renderActions: {
