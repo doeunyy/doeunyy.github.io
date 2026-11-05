@@ -17,6 +17,11 @@ layout: default
           <i class="fa-brands fa-github"></i>
         </a>
       {% endif %}
+      {% if page.website %}
+        <a class="post-title-link post-title-link-circle" href="{{ page.website }}" target="_blank" rel="noopener noreferrer" aria-label="Live site">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      {% endif %}
       {% if page.demo %}
         <a class="post-title-link post-title-link-circle" href="{{ page.demo }}" target="_blank" rel="noopener noreferrer" aria-label="Demo video">
           <i class="fa-solid fa-circle-play"></i>

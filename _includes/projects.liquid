@@ -11,11 +11,18 @@
         {% endif %}
         <p class="card-text">{{ project.description }}</p>
         <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
+          {% if project.github or project.website or project.article or project.demo %}
             <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
+              {% if project.github %}
+                <div class="icon" data-toggle="tooltip" title="Code Repository">
+                  <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
+                </div>
+              {% endif %}
+              {% if project.website %}
+                <div class="icon" data-toggle="tooltip" title="Live Site">
+                  <a class="project-article-icon" href="{{ project.website }}" aria-label="Live site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              {% endif %}
               {% if project.article %}
                 <div class="icon" data-toggle="tooltip" title="Article">
                   <a class="project-article-icon" href="{{ project.article }}" aria-label="Article"><i class="fa-solid fa-newspaper"></i></a>
