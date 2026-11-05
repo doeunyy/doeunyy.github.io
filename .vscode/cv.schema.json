@@ -15,11 +15,7 @@
         "type": "array"
       }
     },
-    "required": [
-      "title",
-      "type",
-      "contents"
-    ],
+    "required": ["title", "type", "contents"],
     "additionalProperties": true
   }
 }

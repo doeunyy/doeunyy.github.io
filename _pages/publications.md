@@ -10,6 +10,7 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
+
 {% comment %}
 {% include bib_search.liquid %}
 {% endcomment %}

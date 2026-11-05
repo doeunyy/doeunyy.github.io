@@ -28,23 +28,23 @@ GPS- and rank-aware calibration improved candidate selection quality by combinin
 
 ### Effect of Score Calibration
 
-| Calibration Params (α / β / γ) | Accuracy | Precision | Recall | F1 | AUROC | AUPR |
-| ------------------------------ | -------: | --------: | -----: | -: | ----: | ---: |
-| None | 0.972 | 0.381 | 0.364 | 0.372 | 0.751 | 0.175 |
-| 0.30 / 0.10 / 0.10 | 0.977 | 0.500 | 0.364 | 0.421 | 0.764 | 0.258 |
-| 0.10 / 0.05 / 0.02 | 0.965 | 0.313 | 0.455 | 0.370 | 0.795 | 0.214 |
-| 0.30 / 0.05 / 0.01 | 0.976 | 0.474 | 0.409 | 0.439 | 0.835 | 0.268 |
-| **0.30 / 0.02 / 0.01** | **0.984** | **0.733** | **0.500** | **0.595** | **0.912** | **0.450** |
-| 0.30 / 0.01 / 0.01 | 0.974 | 0.400 | 0.273 | 0.324 | 0.713 | 0.152 |
+| Calibration Params (α / β / γ) |  Accuracy | Precision |    Recall |        F1 |     AUROC |      AUPR |
+| ------------------------------ | --------: | --------: | --------: | --------: | --------: | --------: |
+| None                           |     0.972 |     0.381 |     0.364 |     0.372 |     0.751 |     0.175 |
+| 0.30 / 0.10 / 0.10             |     0.977 |     0.500 |     0.364 |     0.421 |     0.764 |     0.258 |
+| 0.10 / 0.05 / 0.02             |     0.965 |     0.313 |     0.455 |     0.370 |     0.795 |     0.214 |
+| 0.30 / 0.05 / 0.01             |     0.976 |     0.474 |     0.409 |     0.439 |     0.835 |     0.268 |
+| **0.30 / 0.02 / 0.01**         | **0.984** | **0.733** | **0.500** | **0.595** | **0.912** | **0.450** |
+| 0.30 / 0.01 / 0.01             |     0.974 |     0.400 |     0.273 |     0.324 |     0.713 |     0.152 |
 
 **Takeaway.** Score calibration improved F1 from **0.372 to 0.595** and AUPR from **0.175 to 0.450**, showing that GPS- and rank-aware spatial priors helped refine candidate entrance ranking.
 
 ### Effect of Overlay-Based Spatial Representation
 
-| Spatial Overlay | Accuracy | Precision | Recall | F1 | AUROC | AUPR |
-| --------------- | -------: | --------: | -----: | -: | ----: | ---: |
-| Without overlay | 0.956 | 0.237 | 0.409 | 0.300 | 0.782 | 0.168 |
-| **With overlay** | **0.972** | **0.381** | 0.364 | **0.372** | 0.751 | **0.175** |
+| Spatial Overlay  |  Accuracy | Precision | Recall |        F1 | AUROC |      AUPR |
+| ---------------- | --------: | --------: | -----: | --------: | ----: | --------: |
+| Without overlay  |     0.956 |     0.237 |  0.409 |     0.300 | 0.782 |     0.168 |
+| **With overlay** | **0.972** | **0.381** |  0.364 | **0.372** | 0.751 | **0.175** |
 
 **Takeaway.** Overlaying building geometry, candidate points, and GPS traces onto aerial imagery improved spatial grounding, increasing F1 from **0.300 to 0.372** and Precision from **0.237 to 0.381**.
 

@@ -65,9 +65,7 @@
       "studyType": "Exchange",
       "startDate": "2022-08",
       "endDate": "2022-12",
-      "courses": [
-        "Relevant coursework: Introduction to AI, Formal Language and Computability"
-      ]
+      "courses": ["Relevant coursework: Introduction to AI, Formal Language and Computability"]
     }
   ],
   "research_experience": [
@@ -300,11 +298,7 @@
     {
       "name": "Programming",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "JavaScript / TypeScript",
-        "SQL"
-      ]
+      "keywords": ["Python", "JavaScript / TypeScript", "SQL"]
     },
     {
       "name": "AI / ML",
@@ -322,29 +316,12 @@
     {
       "name": "LLM Systems & Agents",
       "icon": "fa-solid fa-robot",
-      "keywords": [
-        "LangGraph",
-        "LangChain",
-        "MCP / FastMCP",
-        "Retrieval-Augmented Generation",
-        "Tool calling",
-        "Prompt engineering",
-        "RAGAS"
-      ]
+      "keywords": ["LangGraph", "LangChain", "MCP / FastMCP", "Retrieval-Augmented Generation", "Tool calling", "Prompt engineering", "RAGAS"]
     },
     {
       "name": "Backend & Web",
       "icon": "fa-solid fa-server",
-      "keywords": [
-        "FastAPI",
-        "Django",
-        "Node.js / Express",
-        "React Native",
-        "Gradio",
-        "RabbitMQ",
-        "REST APIs",
-        "Server-Sent Events"
-      ]
+      "keywords": ["FastAPI", "Django", "Node.js / Express", "React Native", "Gradio", "RabbitMQ", "REST APIs", "Server-Sent Events"]
     },
     {
       "name": "Cloud & DevOps",
@@ -361,15 +338,7 @@
     {
       "name": "Data & Storage",
       "icon": "fa-solid fa-database",
-      "keywords": [
-        "MongoDB",
-        "MySQL",
-        "SQLite",
-        "Firestore",
-        "Chroma",
-        "NumPy / Pandas",
-        "Tableau"
-      ]
+      "keywords": ["MongoDB", "MySQL", "SQLite", "Firestore", "Chroma", "NumPy / Pandas", "Tableau"]
     }
   ],
   "languages": [],
