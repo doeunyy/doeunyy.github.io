@@ -44,7 +44,10 @@ a.btncv:hover {
 
 p.location {
   font-size: 0.7rem;
-  white-space: nowrap;
+  // Allow long locations (e.g. "Santa Monica, CA (Remote)") to wrap instead of
+  // overflowing the narrow date column into the entry text. Use non-breaking
+  // spaces in the data to control where such a location breaks.
+  white-space: normal;
 }
 
 i.iconlocation {
